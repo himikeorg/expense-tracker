@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />-->
+    <link rel="stylesheet" href="style.css" />
+    <title>New Project</title>
+  </head>
+  <body>
+    <main class="expense-tracker">
+      <div class="submit">
+        <h1>Expense Tracker</h1>
+        <p>Add a new item:</p>
+        <form id="expense-info" action="javascript:submit()">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+          <label for="date">Date:</label>
+          <input type="date" id="date" />
+          <label for="amount">Amount</label>
+          <input type="text" id="amount" />
+          <input type="submit" value="Add expense" />
+        </form>
+      </div>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Name:</th>
+              <th>Date:</th>
+              <th>Amount:</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
