@@ -4,6 +4,7 @@ const table = document.querySelector("table");
 const name = document.querySelector("#name");
 const date = document.querySelector("#date");
 const amount = document.querySelector("#amount");
+const clearAll = document.querySelector(".clear-all");
 
 let total = 0;
 
@@ -29,4 +30,10 @@ function submit() {
   row.appendChild(cell4);
 
   table.appendChild(row);
+
+  // Clear all button
+  clearAll.addEventListener("click", function () {
+    row.classList.add("hidden");
+    total = 0;
+  });
 }
